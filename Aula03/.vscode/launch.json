@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercicio03",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio03",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercicio04",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio04",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercicio05",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio05",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercicio06",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio06",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercicio07",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio07",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercicio08",
+            "request": "launch",
+            "mainClass": "exercicios.Exercicio08",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uri1059",
+            "request": "launch",
+            "mainClass": "uri.Uri1059",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uri1064",
+            "request": "launch",
+            "mainClass": "uri.Uri1064",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uri1066",
+            "request": "launch",
+            "mainClass": "uri.Uri1066",
+            "projectName": "Aula03_feb7d916"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uri1114",
+            "request": "launch",
+            "mainClass": "uri.Uri1114",
+            "projectName": "Aula03_feb7d916"
+        }
+    ]
+}
