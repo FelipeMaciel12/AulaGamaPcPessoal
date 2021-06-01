@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios.exercicio01;
 
 public class Appplacar {
     
