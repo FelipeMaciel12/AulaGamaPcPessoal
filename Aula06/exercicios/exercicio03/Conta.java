@@ -5,10 +5,10 @@ public class Conta {
     private int numero, digito;
     private double saldo;
 
-    public Conta(int numero, int digito, double saldo) {
+    public Conta(int numero, int digito) {
         this.numero = numero;
         this.digito = digito;
-        this.saldo = saldo;
+        this.saldo = 0;
 
     }
 
@@ -22,6 +22,14 @@ public class Conta {
 
     public double getSaldo(){
         return saldo;
+    }
+
+    public int getnumeroConta(){
+        return numero;
+    }
+
+    public int getdigitoConta(){
+        return digito;
     }
 
     public boolean deposito(double valor) {

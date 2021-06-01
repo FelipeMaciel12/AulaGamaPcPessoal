@@ -6,7 +6,7 @@ public class ContaEspecial extends Conta {
 
     public ContaEspecial(int numero, int digito, double saldo){
 
-        super(numero, digito, saldo);
+        super(numero, digito);
         
     }
 

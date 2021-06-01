@@ -4,9 +4,9 @@ public class ContaCorrente extends Conta {
 
     private final double Taxa_Deposito=0.1;
 
-    public ContaCorrente(int numero, int digito, double saldo) {
+    public ContaCorrente(int numero, int digito) {
 
-        super(numero, digito, saldo);
+        super(numero, digito);
 
     }
 
