@@ -7,6 +7,8 @@ public class App {
         Funcionario func2 = new Funcionario("Felipe");
         Gerente ger = new Gerente ("Arnaldo",1000.00,10);
 
+
+        //polimorfismo: mesmo metodo com corpotamento interno diferente
         func.calculaSalario(0.1);
         func2.calculaSalario(0.1);
         ger.calculaSalario(0.1);
@@ -14,6 +16,9 @@ public class App {
         System.out.println(func.imprimir());
         System.out.println(func2.imprimir());
         System.out.println(ger.imprimir());
+
+        System.out.println(func);
+        System.out.println(ger);
 
     }
 }

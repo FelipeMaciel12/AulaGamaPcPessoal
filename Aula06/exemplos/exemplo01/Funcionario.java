@@ -3,6 +3,8 @@ package exemplos.exemplo01;
 /**
  * Funcionario
  */
+
+ // Por herança todo mundo vem do extends Object (Classe base de objetos no Java)
 public class Funcionario {
 
     private String nome;
@@ -27,5 +29,11 @@ public String imprimir (){
 public void  calculaSalario(double perc){
     salario=salario +(salario*perc);
 }
+
+@Override
+public String toString() {
     
+    return nome + " : " + salario;
+}
+
 }
