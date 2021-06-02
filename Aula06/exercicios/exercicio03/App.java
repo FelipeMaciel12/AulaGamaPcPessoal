@@ -3,6 +3,7 @@ package exercicios.exercicio03;
 //import java.util.ArrayList;
 import java.util.Scanner;
 
+import exercicios.exercicio03.modelo.Conta;
 //import exercicios.exercicio03.modelo.Conta;
 //import exercicios.exercicio03.modelo.ContaCorrente;
 //import exercicios.exercicio03.modelo.ContaEspecial;
@@ -126,7 +127,13 @@ public class App {
                     numero = entrada.nextInt();
                     System.out.println("Informe o digito da Conta:");
                     digito = entrada.nextInt();
-                    System.out.println(contas.getSaldo(numero, digito));
+                    
+                    Conta conta = contas.getConta(numero, digito);
+                    if (conta!=null) {
+                        System.out.println(conta);
+                    } else{
+                        System.out.println("Conta não encontrada!");
+                    }                  
                     break;
 
                 // for (Conta conta : contas) {
