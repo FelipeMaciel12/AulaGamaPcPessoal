@@ -1,4 +1,4 @@
-package exercicios.exercicio03;
+package exercicios.exercicio03.modelo;
 
 public class ContaEspecial extends Conta {
     
