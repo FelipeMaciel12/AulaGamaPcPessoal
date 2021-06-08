@@ -20,6 +20,7 @@ public class ItmnAlarmeController {
     @Autowired
     private ItmnAlarmeRepo repo;
 
+    //Buscar todos os alarmes    
     @GetMapping ("/todos")
     public List<ItmnAlarme> listarTodos(){
         List<ItmnAlarme> lista = (List<ItmnAlarme>) repo.findAll();

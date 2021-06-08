@@ -23,6 +23,7 @@ public class ItmnEventoController {
     @Autowired
     private ItmnEventoRepo repo;
 
+    // Buscar todos os eventos
     @GetMapping("/todos")
     public List<ItmnEvento> listarTodos() {
 
@@ -30,6 +31,7 @@ public class ItmnEventoController {
         return lista;
     }
 
+    //Filtrar evento por data
     @PostMapping("/data")
     public ResponseEntity<ItmnEvento> buscarEvento(@RequestBody ItmnEvento data){
         ItmnEvento evento = repo.findBydataEvt(data.getDataEvt());
