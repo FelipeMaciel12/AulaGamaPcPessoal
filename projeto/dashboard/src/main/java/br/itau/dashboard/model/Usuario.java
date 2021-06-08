@@ -9,7 +9,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "usuario")
-
 public class Usuario {
 
     @Id
@@ -29,7 +28,7 @@ public class Usuario {
     @Column(name = "senha", length = 30, nullable = false)
     private String senha;
 
-    @Column(name = "linkfoto", length = 200, nullable = false)
+    @Column(name = "linkfoto", length = 200)
     private String linkFoto;
 
     public int getId() {
@@ -80,4 +79,5 @@ public class Usuario {
         this.linkFoto = linkFoto;
     }
 
+    
 }
