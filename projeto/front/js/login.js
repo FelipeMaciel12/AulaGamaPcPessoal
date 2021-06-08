@@ -1,8 +1,9 @@
+
 function login() {
     let user = document.getElementById("txtUser").value
     let password = document.getElementById("txtPassword").value
-    // let url = `http://localhost:8080/user/id/${user}`
-    let url = `http://localhost:8080/user/login`
+
+    let url = `http://localhost:8080/user/login`  
 
     let msg = {
         email: user,
@@ -16,25 +17,22 @@ function login() {
         headers: {
             'Content-type': 'application/json'
         }
-
     }
 
-    // console.log(user,password,url)
-
-    fetch(url, data).then(res => tratarResposta(res))
+    fetch(url, data)
+    .then( res => tratarResposta(res) )
 
 }
 
 function tratarResposta(resposta) {
-    if (resposta.status == 200) {
-        resposta.json().then(res => gravar(res))
+    if(resposta.status == 200){
+        resposta.json().then( res => gravar(res) )
     } else {
-        console.log("Usuário/Senha Inválido!")
-        document.getElementById("msgError").innerHTML="<b>Usuário/Senha inválido </b>"
+        document.getElementById("msgError").innerHTML = "<b>Usuário/Senha inválido</b>"
     }
 }
 
 function gravar(usuario) {
     localStorage.setItem("userLogged", JSON.stringify(usuario))
-    window.location = "interno.html"
+    window.location = "interna.html"
 }

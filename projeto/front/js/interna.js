@@ -1,25 +1,25 @@
 
 function validaLogin() {
     let userTxt = localStorage.getItem("userLogged")
-    
-    if (!userTxt) {
-        window.location="index.html"
+
+    if(!userTxt) {
+        window.location = "index.html"
     }
 
     let user = JSON.parse(userTxt)
 
-    document.getElementById("dadosUser").innerHTML= `${user.nome} (${user.racf})` 
+    document.getElementById("dadosUser").innerHTML = `${user.nome} (${user.racf})`
 
     listarUser()
 }
 
 function logout() {
     localStorage.removeItem("userLogged")
-    window.location="index.html"
+    window.location = "index.html"
 }
 
 function listarUser() {
-    let url = `http://localhost:8080/user/all`
+    let url = `http://localhost:8080/user/all` 
 
     fetch(url)
     .then(res => res.json())
