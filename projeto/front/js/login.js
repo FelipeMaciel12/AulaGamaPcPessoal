@@ -3,7 +3,7 @@ function login() {
     let user = document.getElementById("txtUser").value
     let password = document.getElementById("txtPassword").value
 
-    let url = `http://localhost:8080/user/login`  
+    let url = `http://localhost:8080/user/login`
 
     let msg = {
         email: user,
@@ -20,13 +20,13 @@ function login() {
     }
 
     fetch(url, data)
-    .then( res => tratarResposta(res) )
+        .then(res => tratarResposta(res))
 
 }
 
 function tratarResposta(resposta) {
-    if(resposta.status == 200){
-        resposta.json().then( res => gravar(res) )
+    if (resposta.status == 200) {
+        resposta.json().then(res => gravar(res))
     } else {
         document.getElementById("msgError").innerHTML = "<b>Usuário/Senha inválido</b>"
     }

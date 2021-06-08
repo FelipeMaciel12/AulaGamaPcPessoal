@@ -37,3 +37,25 @@ function exibirLista(lista) {
     tabela += "</table>"
     document.getElementById("tabela").innerHTML = tabela
 }
+
+
+function listaAlarme() {
+    let url = `http://localhost:8080/alarme/todos` 
+
+    fetch(url)
+    .then(res => res.json())
+    .then(res => exibirAlarme(res))
+    window.location = "alarmes.html"
+}
+
+function exibirAlarme(lista){
+    let tabela = "<table> <tr> <th>IdAlarme</th> <th>nome</th> <th>descricao</th> </tr>"
+
+    for(i=0; i < lista.length ; i++) {
+        tabela += `<tr> <td>${lista[i].idAlarme}</td> <td>${lista[i].nome}</td> <td>${lista[i].descricao}</td> </tr>`
+    }
+
+    tabela += "</table>"
+    document.getElementById("tabela").innerHTML = tabela
+    
+}

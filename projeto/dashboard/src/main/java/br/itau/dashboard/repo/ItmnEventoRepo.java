@@ -8,6 +8,6 @@ import br.itau.dashboard.model.ItmnEvento;
 
 public interface ItmnEventoRepo extends CrudRepository <ItmnEvento,Long> {
 
-    public ItmnEvento findBydataEvt (Date data);
+    public ItmnEvento findBydataEvt (Date dataInicio);
     
 }
